@@ -1,4 +1,4 @@
-# image scraper: web crawler module
+# image scraper: python image scraper from Google Images, Instagram and twitter
 
 """
 Instagotwi Image Scraper 0.2 beta
