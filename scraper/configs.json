@@ -1,0 +1,23 @@
+{
+	"twitter":{
+		"baseUrl": "https://twitter.com/search?f=images&vertical=default&q=",
+		"postUrl": "",
+		"selector": "span.AdaptiveStreamGridImage img"
+	},
+	"google":{
+		"baseUrl": "https://www.google.com.sg/search?q=",
+		"postUrl": "&tbm=isch",
+		"selector": "a.rg_l"
+	},
+	"instagram":{
+		"baseUrl": "https://instagram.com/explore/tags/",
+		"postUrl": "",
+		"selector": "img"
+	}
+}
+
+
+
+
+
+
