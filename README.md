@@ -1,15 +1,9 @@
 # image scraper: python image scraper from Google Images, Instagram and twitter
 
-"""
 Instagotwi Image Scraper 0.2 beta
 
 Developted by Mind Design, Amsterdam [http://minddesign.info]
-
 Published under Creative Commons license Attribution-NonCommercial-ShareAlike [https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode]
-
-Programming by Amir Houieh
-September 2015
-"""
 
 ## To Install requirements
 	$ sudo pip install requirements.txt
