@@ -1,4 +1,4 @@
-import re, os, requests, shutil, json
+import re, os, requests, shutil, json, urllib
 
 from tools import loadJsonFile
 
@@ -8,7 +8,7 @@ from selenium.webdriver import Firefox
 from pattern.web import DOM
 
 class scraper(object):
-    configs_data = loadJsonFile('configs.json')
+    configs_data = loadJsonFile('/Users/amir/Python/instagotwi/scraper/configs.json')
     js_scrollToDown = "window.scrollTo(0, document.body.scrollHeight+100);"
     js_scrollToUp = "window.scrollTo(0, 0);"
     valid_image_ext_list = ['.png','.jpg','.jpeg', '.gif', '.bmp', '.tiff']
@@ -181,10 +181,10 @@ class scraper(object):
         if self.source == "instagram":
             #there is a load more botton, which needs to be triggerd
             try:
-                loadMore = self.driver.find_element_by_link_text("LOAD MORE")
+                loadMore = self.driver.find_element_by_link_text("Load more")
                 loadMore.click()
             except:
-                self.jack(1)
+                self.jack()
                 print 'no load more button found'
 
         sleep(1)
@@ -265,7 +265,12 @@ class scraper(object):
             - save downaloded image in output directory
         """
 
+        print src
+        src = urllib.unquote(urllib.unquote(src))
+        print src
+        print ""
         extension = os.path.splitext( src )[1]
+
         if extension not in self.valid_image_ext_list:
             return
 

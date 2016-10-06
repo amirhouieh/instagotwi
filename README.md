@@ -8,12 +8,15 @@ Published under Creative Commons license Attribution-NonCommercial-ShareAlike [h
 ## To Install requirements
 	$ sudo pip install requirements.txt
 
+	mac os El Capitan:
+	$ sudo pip --user install requirements.txt
+
 
 ## Get it to work
 	INITIALIZATION:
 		"""
 		avaible source_names: 
-		'google_image','twitter','instagram'
+		'google','twitter','instagram'
 		"""
 
 		s = scraper.scraper( 'source_name' )
