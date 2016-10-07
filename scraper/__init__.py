@@ -8,7 +8,7 @@ from selenium.webdriver import Firefox
 from pattern.web import DOM
 
 class scraper(object):
-    configs_data = loadJsonFile('/Users/amir/Python/instagotwi/scraper/configs.json')
+    configs_data = loadJsonFile(os.path.abspath('./scraper/configs.json'))
     js_scrollToDown = "window.scrollTo(0, document.body.scrollHeight+100);"
     js_scrollToUp = "window.scrollTo(0, 0);"
     valid_image_ext_list = ['.png','.jpg','.jpeg', '.gif', '.bmp', '.tiff']
